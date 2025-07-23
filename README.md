@@ -108,8 +108,8 @@ The noise margins are calculated as follows:
 
 $$
 \begin{aligned}
-\text{Noise Margin High (NMH)} &= V_{OH} - V_{IH} = 1.2\, \text{V} - 0.609484\, \text{V} = 0.590516\, \text{V} \\
-\text{Noise Margin Low (NML)} &= V_{IL} - V_{OL} = 0.308612\, \text{V} - 0\, \text{V} = 0.308612\, \text{V}
+\text{Noise Margin High (NMH)} &= V_{OH} - V_{IH} = 1.2 \text{V} - 0.609484 \text{V} = 0.590516 \text{V} \\
+\text{Noise Margin Low (NML)} &= V_{IL} - V_{OL} = 0.308612 \text{V} - 0 \text{V} = 0.308612 \text{V}
 \end{aligned}
 $$
 
@@ -117,28 +117,45 @@ $$
 
 
 
-# Layout Design 
+# 3. Layout Design 
 
-##  Layout Implementation	
+## 3.1  Layout Implementation	
 
+ **inverter layout**
+ 
+<img width="890" height="1093" alt="image" src="https://github.com/user-attachments/assets/5a801317-3105-491a-bc15-194438c30bdf" />
 
+## 3.2  DRC Results
 
+**“DRC clean” confirmation window**
 
+<img width="689" height="686" alt="image" src="https://github.com/user-attachments/assets/154ecbcd-8bf4-4e30-88e8-14ee1afd1073" />
 
+the Design Rule Check (DRC) results verify that the layout complies with all foundry manufacturing rules (spacing, widths, layers, etc.).
 
+## 3.3  LVS Results
 
+**“LVS match” confirmation window**
 
+<img width="1019" height="651" alt="image" src="https://github.com/user-attachments/assets/d2d4c349-12fb-4493-a834-b84ec34c09d5" />
 
+the Layout Versus Schematic (LVS) check confirms that the layout's transistor connectivity matches exactly with the original schematic.
 
+## 3.4 Parasitic Extraction View	
 
+**Assura RCX–generated extracted layout**
 
+<img width="622" height="762" alt="4 inverter" src="https://github.com/user-attachments/assets/92eeaf68-87eb-45d3-8556-b8704f915a85" />
 
+ here resistance and capacitance elements from wires and devices are identified. The extracted view enables accurate post-layout simulations to capture real-world effects on delay and power.
 
+## 3.5 Post-Layout vs Schematic Timing	
 
+here i did the timing comparision of output signal of schematic and the extracted layout with the help of config view which introduces all the resistance and the capacitance from the extracted layout.
 
+<img width="940" height="367" alt="image" src="https://github.com/user-attachments/assets/68fefcef-a3ba-43a4-993e-ee94a9db1767" />
 
-
-
+here the difference is **4.40943 ps**, this difference is caused by the resistance and capacitance present in the layout
 
 
 
