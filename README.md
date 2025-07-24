@@ -18,13 +18,13 @@ By the end of the project the inverter:
 -	Achieves low propagation delay.
 -	Passes all sign-off checks (DRC, LVS, PEX) under worst-case process, voltage, and temperature conditions.
 
-# 1	CIRCUIT DESIGN 
+# 1.	CIRCUIT DESIGN 
 
 ## 1.1	Schematic Design 
 
 <img width="940" height="1016" alt="image" src="https://github.com/user-attachments/assets/0fd8985e-91df-4221-ab6f-debbfbeca804" />
 
-### CMOS Inverter: Schematic Summary
+ **CMOS Inverter: Schematic Summary**
 
 | Device | Type | Width | Length | Comments |
 | :-- | :-- | :-- | :-- | :-- |
@@ -309,7 +309,7 @@ the timing comparision of output signal of schematic and the updated extracted l
 here the difference is **1.313994 ps**, earlier it was **4.40943 ps** with the 120n pmos width
 
 
-# 7 Final Comparision between 120n and 320n width of the pmos
+# 7. Final Comparision between 120n and 320n width of the pmos
 
 | Metric | 120 nm PMOS | 320 nm PMOS |
 | :-- | :-- | :-- |
@@ -318,67 +318,6 @@ here the difference is **1.313994 ps**, earlier it was **4.40943 ps** with the 1
 | NML / NMH | 0.308 V / 0.590 V | **0.461 V / 0.452 V** |
 | Post-layout Δdelay | 4.40 ps | **1.31 ps** |
 | VM deviation from 0.6 V | 23% | **0.8%** |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
