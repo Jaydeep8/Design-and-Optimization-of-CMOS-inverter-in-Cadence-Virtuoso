@@ -4,21 +4,22 @@
 
 # Introduction 
 
-<img width="626" height="626" alt="image" src="https://github.com/user-attachments/assets/ba6da39a-0660-4ec3-bd6a-bfff3936a853" />
-
 The CMOS inverter is the fundamental building block of nearly every digital integrated circuit. By complementarily pairing an NMOS pull-down network with a PMOS pull-up network, it provides:
 -	It converts logic “1” to “0” and vice-versa, enabling Boolean functionality for larger logic gates and sequential elements.
--	In steady states one transistor is always off, so static current ideally approaches zero, making CMOS inverters far more power-efficient than resistor–transistor or NMOS-only logic families.
--	Driver scalability – by adjusting transistor widths, the inverter’s drive strength can be tuned to meet timing, noise-margin, and fan-out requirements, or to buffer and distribute high-frequency on-chip clocks.
+-	In steady states one transistor is always off, so static current ideally approaches zero, which makes it power-efficient. 
+
+<img width="626" height="626" alt="image" src="https://github.com/user-attachments/assets/ba6da39a-0660-4ec3-bd6a-bfff3936a853" />
 
 
 
 By the end of the project the inverter:
-•	Achieves balanced noise margins and a switching threshold within 1% of VDD/2V.
-•	Meets propagation-delay and dynamic-power targets derived from first-order RC analysis of CMOS delays.
-•	Passes all sign-off checks (DRC, LVS, PEX) under worst-case process, voltage, and temperature conditions.
+
+-	Achieves balanced noise margins and a switching threshold within 1% of VDD/2V.
+-	Achieves low propagation delay.
+-	Passes all sign-off checks (DRC, LVS, PEX) under worst-case process, voltage, and temperature conditions.
 
 # 1	CIRCUIT DESIGN 
+
 ## 1.1	Schematic Design 
 
 <img width="940" height="1016" alt="image" src="https://github.com/user-attachments/assets/0fd8985e-91df-4221-ab6f-debbfbeca804" />
@@ -27,8 +28,8 @@ By the end of the project the inverter:
 
 | Device | Type | Width | Length | Comments |
 | :-- | :-- | :-- | :-- | :-- |
-| M1 | PMOS | 120nm | 100nm | Pull-up, bulk to VDD |
-| M2 | NMOS | 120nm | 100nm | Pull-down, bulk to GND |
+| M1 | PMOS | 120nm | 100nm | Pull-up, body to VDD |
+| M2 | NMOS | 120nm | 100nm | Pull-down, body to GND |
 
 **Pins:**
 VIN, VOUT, VDD, GND
@@ -52,10 +53,11 @@ The testbench includes the following connections:
 1.2V
 -	GND: The ground connection tied to the NMOS source and reference node.
 -	Load Capacitor (1 fF): Connected at the vout to model the capacitive load of real circuits.
-The 1 fF capacitor at the output simulates the small electrical load an inverter would have when driving other gates in a real circuit. This makes the timing and power results from the simulation more accurate and realistic.
- All the analyses in this project—like delay, noise margin, and power—are performed using this testbench setup.
+The 1 fF capacitor at the output simulates the small electrical load an inverter would have when driving other gates in a real circuit.
 
 <img width="940" height="572" alt="image" src="https://github.com/user-attachments/assets/65bbcd29-d022-4629-9fd0-5816eb754dd3" />
+
+ All the analyses in this project—like delay, noise margin, and power—are performed using this testbench setup.
 
 # 2.	Simulation & Analysis                                                                  
 
@@ -132,7 +134,7 @@ $$
 
 <img width="689" height="686" alt="image" src="https://github.com/user-attachments/assets/154ecbcd-8bf4-4e30-88e8-14ee1afd1073" />
 
-the Design Rule Check (DRC) results verify that the layout complies with all foundry manufacturing rules (spacing, widths, layers, etc.).
+the Design Rule Check (DRC) results verify that the layout complies with all foundry manufacturing rules like minimum and maximum spacing, widths, layers, etc...
 
 ## 3.3  LVS Results
 
@@ -158,7 +160,7 @@ here i did the timing comparision of output signal of schematic and the extracte
 
 here the difference is **4.40943 ps**, this difference is caused by the resistance and capacitance present in the layout
 
-# 4. Optimization: Sizing for Symmetry	
+# 4. Optimization
 
 <img width="1063" height="789" alt="image" src="https://github.com/user-attachments/assets/2253a801-4b23-4c3a-bf49-4c1e5872f805" />
 
