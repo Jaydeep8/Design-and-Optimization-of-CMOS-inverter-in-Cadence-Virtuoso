@@ -2,11 +2,14 @@
 
 # Contents
 
-1) [Introduction](https://github.com/Jaydeep8/Design-and-Optimization-of-CMOS-inverter-in-Cadence-Virtuoso/main/README.md#1circuit-design)
-2) [Circuit Design](https://github.com/Jaydeep8/Design-and-Optimization-of-CMOS-inverter-in-Cadence-Virtuoso/main/README.md#1circuit-design)
-3) [Day3: Design library cell using Magic Layout and ngspice characterization](https://github.com/Jaydeep8/NASSCOM-VSD-SoC-Design-Program/tree/main?tab=readme-ov-file#day3---design-library-cell-using-magic-layout-and-ngspice-characterization)
-4) [Day4: Pre-layout timing analysis and importance of good clock tree](https://github.com/Jaydeep8/NASSCOM-VSD-SoC-Design-Program/tree/main?tab=readme-ov-file#day4---pre-layout-timing-analysis-and-importance-of-good-clock-tree)
-5) [Day5: Final steps for RTL2GDS using tritonRoute and openSTA](https://github.com/Jaydeep8/NASSCOM-VSD-SoC-Design-Program/tree/main?tab=readme-ov-file#day5---final-steps-for-rtl2gds-using-tritonroute-and-opensta)
+ - [Introduction](https://github.com/Jaydeep8/Design-and-Optimization-of-CMOS-inverter-in-Cadence-Virtuoso?tab=readme-ov-file#introduction) 
+ - [1. Circuit Design](https://github.com/Jaydeep8/Design-and-Optimization-of-CMOS-inverter-in-Cadence-Virtuoso?tab=readme-ov-file#1circuit-design)
+ - [2. Simulation Analysis](https://github.com/Jaydeep8/Design-and-Optimization-of-CMOS-inverter-in-Cadence-Virtuoso?tab=readme-ov-file#2simulation--analysis)
+ - [3. Layout Design](https://github.com/Jaydeep8/Design-and-Optimization-of-CMOS-inverter-in-Cadence-Virtuoso?tab=readme-ov-file#3-layout-design)
+ - [4. Optimization](https://github.com/Jaydeep8/Design-and-Optimization-of-CMOS-inverter-in-Cadence-Virtuoso?tab=readme-ov-file#4-optimization)
+ - [5. Updated Design (320 nm PMOS)](https://github.com/Jaydeep8/Design-and-Optimization-of-CMOS-inverter-in-Cadence-Virtuoso?tab=readme-ov-file#5-updated-design-320-nm-pmos)
+ - [6. Layout Update & Verification (320 nm PMOS)](https://github.com/Jaydeep8/Design-and-Optimization-of-CMOS-inverter-in-Cadence-Virtuoso?tab=readme-ov-file#6-layout-update--verification-320-nm-pmos)
+ - [7. Final Comparision between 120n and 320n width of the pmos](https://github.com/Jaydeep8/Design-and-Optimization-of-CMOS-inverter-in-Cadence-Virtuoso?tab=readme-ov-file#7-final-comparision-between-120n-and-320n-width-of-the-pmos)
 
 
 
