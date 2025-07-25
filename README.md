@@ -363,7 +363,7 @@ here the difference is **1.313994 ps**, earlier it was **4.40943 ps** with the 1
 | Tpd | 16.34 ps | **11.54 ps** |
 | Energy | 2.10 fJ | **2.45 fJ** |
 | NML / NMH | 0.308 V / 0.590 V | **0.461 V / 0.452 V** |
-| Post-layout Δdelay | 4.40 ps | **1.31 ps** |
+| Post-layout difference | 4.40 ps | **1.31 ps** |
 | VM deviation from 0.6 V | 23% | **0.8%** |
 
 
