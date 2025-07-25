@@ -2,8 +2,8 @@
 
 # Contents
 
-1) [Introduction](https://github.com/Jaydeep8/Design-and-Optimization-of-CMOS-inverter-in-Cadence-Virtuoso/edit/main/README.md#introduction)
-2) [Circuit Design](https://github.com/Jaydeep8/Design-and-Optimization-of-CMOS-inverter-in-Cadence-Virtuoso/edit/main/README.md#1circuit-design)
+1) [Introduction](https://github.com/Jaydeep8/Design-and-Optimization-of-CMOS-inverter-in-Cadence-Virtuoso/main/README.md#1circuit-design)
+2) [Circuit Design](https://github.com/Jaydeep8/Design-and-Optimization-of-CMOS-inverter-in-Cadence-Virtuoso/main/README.md#1circuit-design)
 3) [Day3: Design library cell using Magic Layout and ngspice characterization](https://github.com/Jaydeep8/NASSCOM-VSD-SoC-Design-Program/tree/main?tab=readme-ov-file#day3---design-library-cell-using-magic-layout-and-ngspice-characterization)
 4) [Day4: Pre-layout timing analysis and importance of good clock tree](https://github.com/Jaydeep8/NASSCOM-VSD-SoC-Design-Program/tree/main?tab=readme-ov-file#day4---pre-layout-timing-analysis-and-importance-of-good-clock-tree)
 5) [Day5: Final steps for RTL2GDS using tritonRoute and openSTA](https://github.com/Jaydeep8/NASSCOM-VSD-SoC-Design-Program/tree/main?tab=readme-ov-file#day5---final-steps-for-rtl2gds-using-tritonroute-and-opensta)
