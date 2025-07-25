@@ -39,7 +39,7 @@
 
 # Introduction 
 
-The CMOS inverter is the fundamental building block of nearly every digital integrated circuit. By complementarily pairing an NMOS pull-down network with a PMOS pull-up network, it provides:
+The CMOS inverter is the fundamental building block of nearly every digital integrated circuit. 
 -	It converts logic “1” to “0” and vice-versa, enabling Boolean functionality for larger logic gates and sequential elements.
 -	In steady states one transistor is always off, so static current ideally approaches zero, which makes it power-efficient. 
 
@@ -235,6 +235,15 @@ setting pmos width 320n in the schematic
 
 <img width="658" height="712" alt="1 320 inverter" src="https://github.com/user-attachments/assets/070e7236-f85b-46de-89af-0475a9782081" />
 
+ **CMOS Inverter: Schematic Summary**
+
+| Device | Type | Width | Length | Comments |
+| :-- | :-- | :-- | :-- | :-- |
+| M1 | PMOS | 320nm | 100nm | Pull-up, body to VDD |
+| M2 | NMOS | 120nm | 100nm | Pull-down, body to GND |
+
+**Pins:**
+VIN, VOUT, VDD, GND
 
 ## 5.1 Transient Analysis	
 
@@ -292,9 +301,11 @@ $$
 
 
 **Static Power Analysis**
+
 it is performed to check how much current is leakaged when circuit is not switching. Ideally it should be 0
 
 <img width="1827" height="747" alt="image" src="https://github.com/user-attachments/assets/944fdb53-aadc-4cce-8fe9-f473ca31a4ae" />
+
 
 **Dynamic Power Analysis**
 
