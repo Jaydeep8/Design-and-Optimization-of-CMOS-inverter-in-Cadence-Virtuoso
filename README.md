@@ -233,7 +233,8 @@ output with the pmos width of 320n for all the cases
 
 setting pmos width 320n in the schematic 
 
-<img width="658" height="712" alt="1 320 inverter" src="https://github.com/user-attachments/assets/070e7236-f85b-46de-89af-0475a9782081" />
+
+<img width="689" height="744" alt="image" src="https://github.com/user-attachments/assets/94f0c6a7-240c-489f-bfa8-746c7b04f371" />
 
  **CMOS Inverter: Schematic Summary**
 
